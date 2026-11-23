@@ -1,3 +1,8 @@
+* Mon Nov 23 2026 Hazel Caballero <hazel@sicura.us> - 3.1.1
+- `simp_firewalld::rule` now calls `stdlib::seeded_rand_string()` instead of
+  the deprecated `seeded_rand_string()`. Existing ipset names do not change.
+  Requires `puppetlabs/stdlib` >= 9.0.0
+
 * Thu Oct 08 2026 Steven Pritchard <steve@sicura.us> - 3.1.0
 - Add support for OpenVox 9
 - Update metadata.json dependency ranges from the Forge
